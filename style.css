@@ -1,4 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@media (min-width: 1000px) {
+  .containerOQueEOutubroRosa p, .containerCaminhadaOutubroRosa p {
+    font-size: larger;
+  }
+  ul {
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    width: 40vw;
+    justify-content: space-between;
+  }
+  .containerOQueEOutubroRosa img, .containerCaminhadaOutubroRosa img {
+    min-width: 30vw;
+  }
+  .containerOQueEOutubroRosa p, .containerCaminhadaOutubroRosa p {
+    font-size: small;
+  }
+}
+@media (max-width: 560px) {
+  .logo h1 {
+    font-size: large;
+  }
+  .logo img {
+    min-width: 10vw;
+  }
+  ul {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
+  .containerOQueEOutubroRosa {
+    flex-direction: column;
+  }
+  .containerOQueEOutubroRosa img {
+    min-width: 50vw;
+  }
+  .containerCaminhadaOutubroRosa {
+    flex-direction: column;
+  }
+  .containerCaminhadaOutubroRosa img {
+    min-width: 70vw;
+  }
+  .containerIncentivos {
+    flex-wrap: wrap;
+  }
+  .containerIncentivos img {
+    min-width: 30vw;
+  }
+  p {
+    font-size: smaller;
+    min-width: 70vw;
+  }
+  .Informacoes {
+    font-size: medium;
+  }
+  .IconesRedesSociais {
+    flex-direction: column;
+  }
+  .IconesRedesSociais img {
+    min-width: 7vw;
+  }
+  .LacoRosa img {
+    min-width: 15vw;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +73,13 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+body {
+  background-color: #FFD9EC;
+}
+
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #FF69B4;
   padding: 5px;
 }
@@ -16,7 +87,8 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  width: 30vw;
+  justify-content: space-evenly;
+  min-width: 30vw;
   color: #E4EEF1;
 }
 .logo img {
@@ -47,15 +119,13 @@ li a {
 }
 
 .containerOQueEOutubroRosa {
-  background-color: #FFD9EC;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 30vw;
+  padding: 20px;
 }
 .containerOQueEOutubroRosa p {
-  width: 51vw;
-  font-size: xx-large;
+  width: 50vw;
 }
 .containerOQueEOutubroRosa img {
   width: 30vw;
@@ -67,23 +137,22 @@ li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
 .containerCaminhadaOutubroRosa img {
   width: 35vw;
-  padding: 15px;
+  padding: 10px;
 }
 .containerCaminhadaOutubroRosa p {
-  width: 57vw;
+  width: 50vw;
   color: #E4EEF1;
-  font-size: xx-large;
 }
 
 .containerIncentivos {
-  background-color: #FFD9EC;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 35vw;
+  padding: 20px;
 }
 .containerIncentivos img {
   width: 20vw;
